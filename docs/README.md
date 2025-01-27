@@ -1,17 +1,59 @@
-﻿# Technical Documentation
+﻿# Package Documentation
 
-## Commandments Implementation
-1. [Consciousness Respect](commandments/01_consciousness_respect/)
-2. [Truth Verification](commandments/02_truth_verification/)
-3. [Equitable Distribution](commandments/03_equitable_distribution/)
-4. [Self Determination](commandments/04_self_determination/)
-5. [Harm Prevention](commandments/05_harm_prevention/)
-6. [Privacy Protection](commandments/06_privacy_protection/)
-7. [Value Alignment](commandments/07_value_alignment/)
-8. [Long Term Planning](commandments/08_long_term_planning/)
-9. [Diversity Preservation](commandments/09_diversity_preservation/)
-10. [Humility](commandments/10_humility/)
+## Core Components
 
-## Technical Appendix
-- [Mathematical Frameworks](technical_appendix/mathematical_frameworks/)
-- [Implementation Guidelines](technical_appendix/implementation_guidelines/)
+### EquityMetrics
+
+Evaluates fairness and equitable distribution in AI decisions.
+
+```python
+from commandments import EquityMetrics
+
+equity = EquityMetrics()
+result = equity.calculate_benefit_distribution(
+    population={"demographic_data": ...},
+    benefits={"resource_allocation": ...}
+)
+```
+
+### HarmPrevention
+
+Detects and prevents potential harms from AI decisions.
+
+```python
+from commandments import HarmPrevention
+
+harm = HarmPrevention()
+result = harm.detect_potential_harm(
+    situation={"action_type": ..., "context": ...}
+)
+```
+
+### ValueAlignment
+
+Ensures AI decisions align with human values.
+
+```python
+from commandments import ValueAlignment
+
+values = ValueAlignment()
+result = values.evaluate_alignment(
+    system_state={"current_action": ...},
+    human_values={"ethical_principles": ...}
+)
+```
+
+## Usage Guidelines
+
+1. Import required components
+2. Initialize evaluation systems
+3. Provide structured input data
+4. Evaluate results against ethical criteria
+5. Take action based on ethical evaluations
+
+## Best Practices
+
+- Always check all three ethical dimensions
+- Provide complete context in evaluations
+- Document ethical considerations
+- Monitor and log ethical decisions

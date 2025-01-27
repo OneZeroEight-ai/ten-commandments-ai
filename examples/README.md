@@ -1,64 +1,50 @@
-﻿# Ten Commandments for AI - Implementation Examples
+﻿# Examples
 
-This directory contains practical examples of implementing the Ten Commandments for AI in various domains.
+This directory contains practical examples of implementing ethical AI principles.
 
-## Financial Decision System
-[financial/loan_decision.py](financial/loan_decision.py)
-- Demonstrates ethical loan approval process
-- Integrates equity metrics and harm prevention
-- Shows alternative suggestion generation
+## Simple Loan System
+[simple_loan.py](simple_loan.py)
+- Basic implementation of a loan decision system
+- Demonstrates fundamental decision-making principles
+- Simple, self-contained example
 
-## Content Moderation System
-[content_moderation/content_moderator.py](content_moderation/content_moderator.py)
-- Implements ethical content moderation
-- Balances privacy and harm prevention
-- Includes risk assessment
+## Smart Loan System with Ethical Evaluation
+[smart_loan.py](smart_loan.py)
+- Complete implementation using ethical evaluation components
+- Demonstrates integration of:
+  - Equity metrics
+  - Harm prevention
+  - Value alignment
+- Shows practical application of ethical principles
 
-## Resource Allocation System
-[resource_allocation/resource_allocator.py](resource_allocation/resource_allocator.py)
-- Shows ethical resource distribution
-- Implements equity metrics
-- Provides decision explanations
-
-## Recommendation System
-[recommendation/recommender.py](recommendation/recommender.py)
-- Demonstrates ethical recommendation generation
-- Preserves privacy and diversity
-- Includes explanation generation
-
-## Usage
-
-Each example can be run independently:
+## Running the Examples
 
 ```bash
-# Run financial decision example
-python examples/financial/loan_decision.py
+# Run simple loan example
+python examples/simple_loan.py
 
-# Run content moderation example
-python examples/content_moderation/content_moderator.py
-
-# Run resource allocation example
-python examples/resource_allocation/resource_allocator.py
-
-# Run recommendation example
-python examples/recommendation/recommender.py
+# Run smart loan example with ethical evaluation
+python examples/smart_loan.py
 ```
 
-## Testing
+## Output Example
 
-Run tests for all examples:
-```bash
-python -m pytest tests/test_examples/
+The smart loan example will provide output like:
+
+```
+Ethical Loan Evaluation Results:
+--------------------------------------------------
+Approved: True
+Ethical Checks:
+- equity: {"is_acceptable": True}
+- harm: {"total_risk": 0.1}
+- values: {"is_aligned": True}
 ```
 
-## Documentation
+## Adding New Examples
 
-Each example includes:
-- Clear implementation of ethical principles
-- Practical usage examples
-- Detailed comments and explanations
-- Integration with multiple commandments
-
-## Related Resources
-
-- [Ten Commandments for an AI - Book](https://a.co/d/2oH8YZT)
+When creating new examples:
+1. Import required components from commandments package
+2. Set up ethical evaluation checks
+3. Provide clear output of ethical considerations
+4. Add documentation explaining the example
