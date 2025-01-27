@@ -4,6 +4,6 @@
 
     def evaluate_alignment(self, system_state, human_values):
         return {
-            'overall_alignment': 0.9,
-            'is_aligned': True
+            "overall_alignment": 0.9,
+            "is_aligned": True
         }

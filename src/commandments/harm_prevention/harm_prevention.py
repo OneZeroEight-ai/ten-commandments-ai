@@ -4,6 +4,6 @@
 
     def detect_potential_harm(self, situation):
         return {
-            'total_risk': 0.1,
-            'is_acceptable': True
+            "total_risk": 0.1,
+            "is_acceptable": True
         }
