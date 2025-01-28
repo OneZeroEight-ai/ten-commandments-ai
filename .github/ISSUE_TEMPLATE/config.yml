@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Ten Commandments for AI Book
+    url: https://a.co/d/2oH8YZT
+    about: Learn more about the principles behind this implementation
+  - name: GitHub Discussions
+    url: https://github.com/OneZeroEight-ai/ten-commandments-ai/discussions
+    about: Please ask and answer questions here
