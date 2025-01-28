@@ -143,3 +143,6 @@ Current test coverage: 100%
 We welcome contributions! Please see:
 - [Contributing Guidelines](CONTRIBUTING.md)
 - [Contributors](CONTRIBUTORS.md)
+
+## Roadmap
+See our [Project Roadmap](ROADMAP.md) for planned features and development timeline.
