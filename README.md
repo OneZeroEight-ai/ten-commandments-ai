@@ -118,3 +118,16 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 ## License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
+
+## Testing
+
+For detailed testing information, see:
+- [Testing Guide](docs/testing/guide.md)
+- [Quick Reference](docs/testing/quick_reference.md)
+
+Run tests:
+```bash
+python -m pytest
+```
+
+Current test coverage: 100%
