@@ -1,4 +1,10 @@
-﻿# Ten Commandments for AI
+# Ten Commandments for AI
+
+## Status
+[![Python Tests](https://github.com/OneZeroEight-ai/ten-commandments-ai/actions/workflows/python-tests.yml/badge.svg)](https://github.com/OneZeroEight-ai/ten-commandments-ai/actions/workflows/python-tests.yml)
+[![Code Style](https://github.com/OneZeroEight-ai/ten-commandments-ai/actions/workflows/code-style.yml/badge.svg)](https://github.com/OneZeroEight-ai/ten-commandments-ai/actions/workflows/code-style.yml)
+[![Documentation](https://github.com/OneZeroEight-ai/ten-commandments-ai/actions/workflows/documentation.yml/badge.svg)](https://github.com/OneZeroEight-ai/ten-commandments-ai/actions/workflows/documentation.yml)
+
 
 An implementation of ethical principles and guidelines for artificial intelligence systems, based on the [Ten Commandments for an AI](https://a.co/d/2oH8YZT) book.
 
@@ -98,12 +104,12 @@ result = values.evaluate_alignment(system_state, human_values)
 
 ```
 ten-commandments-ai/
-â”œâ”€â”€ commandments/          # Main package
-â”‚   â””â”€â”€ __init__.py       # Core implementations
-â”œâ”€â”€ examples/             # Example implementations
-â”‚   â”œâ”€â”€ simple_loan.py   # Basic example
-â”‚   â””â”€â”€ smart_loan.py    # Advanced example
-â””â”€â”€ setup.py             # Package setup file
+├── commandments/          # Main package
+│   └── __init__.py       # Core implementations
+├── examples/             # Example implementations
+│   ├── simple_loan.py   # Basic example
+│   └── smart_loan.py    # Advanced example
+└── setup.py             # Package setup file
 ```
 
 ## Related Resources
