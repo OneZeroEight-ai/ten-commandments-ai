@@ -131,3 +131,9 @@ python -m pytest
 ```
 
 Current test coverage: 100%
+
+## Contributing
+
+We welcome contributions! Please see:
+- [Contributing Guidelines](CONTRIBUTING.md)
+- [Contributors](CONTRIBUTORS.md)

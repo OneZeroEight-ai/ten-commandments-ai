@@ -1,3 +1,10 @@
+# create_contribution_guide.ps1
+
+# Create docs/contributing directory
+New-Item -Path "docs/contributing" -ItemType Directory -Force
+
+# Create main CONTRIBUTING.md file
+@'
 # Contributing to Ten Commandments for AI
 
 Thank you for your interest in contributing to the Ten Commandments for AI project! This document provides guidelines for contributing.
@@ -78,11 +85,11 @@ def evaluate_ethics(action: Dict[str, Any]) -> Dict[str, Any]:
 ### Project Structure
 ```
 ten-commandments-ai/
-????????? commandments/          # Core package
-????????? docs/                 # Documentation
-????????? examples/             # Example implementations
-????????? tests/               # Test suite
-????????? README.md           # Main documentation
+├── commandments/          # Core package
+├── docs/                 # Documentation
+├── examples/             # Example implementations
+├── tests/               # Test suite
+└── README.md           # Main documentation
 ```
 
 ## Testing Requirements
@@ -208,3 +215,43 @@ Contributors will be:
 - Listed in CONTRIBUTORS.md
 - Credited in release notes
 - Recognized in documentation
+'@ | Out-File -FilePath "CONTRIBUTING.md" -Encoding ASCII
+
+# Create CONTRIBUTORS.md
+@'
+# Contributors
+
+Thank you to all who have contributed to this project!
+
+## Core Team
+- [OneZeroEight-ai](https://github.com/OneZeroEight-ai)
+
+## Contributors
+<!-- Add contributors here -->
+
+## How to Contribute
+See our [Contributing Guide](CONTRIBUTING.md) for details on how to contribute to this project.
+
+## Recognition
+All contributors will be listed here and recognized in release notes.
+'@ | Out-File -FilePath "CONTRIBUTORS.md" -Encoding ASCII
+
+# Update main README to reference contribution guidelines
+$readmeContent = Get-Content "README.md"
+$newContent = @'
+
+## Contributing
+
+We welcome contributions! Please see:
+- [Contributing Guidelines](CONTRIBUTING.md)
+- [Contributors](CONTRIBUTORS.md)
+'@
+
+Add-Content -Path "README.md" -Value $newContent
+
+# Create git commit
+git add .
+git commit -m "Add comprehensive contribution guidelines and recognition"
+git push origin main
+
+Write-Host "Contribution guidelines have been added to the repository"
